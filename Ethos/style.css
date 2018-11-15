@@ -116,7 +116,7 @@ footer > div > div > div> img, .footer-link > img{
 /*banner mobile*/
 @media(max-width:850px){ 
 
-body{
+#banner{
     background-color: rgb(212,241,210); 
 }
 
