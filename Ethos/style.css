@@ -1,14 +1,76 @@
 html, body{
-	margin: 0;
+	margin: 0 auto 0 auto;
 	padding: 0;
 	font-family: 'Fira Sans', sans-serif;
 }
 
+/*----------------- Começo do Banner ---------------------*/
+
+#banner{
+	widows: 100vw;
+	height: 100vh;
+}
+
+#banner img{
+    width: 60vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 175px auto 10px auto;
+}
+
+#banner #banner-text{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    color: rgb(109, 108, 110);
+    font-size: 16px;
+	text-align: center;
+	margin: 0 auto 100px auto;
+	display: block	;
+}
+/*banner mobile*/
+@media(max-width:850px){ 
+
+#banner{
+    background-color: rgb(212,241,210); 
+}
+
+#banner img{
+    width: 75vw;
+    height: 25vh;
+    margin: 100px auto 0 auto;
+}
+
+#banner #banner-text{
+    font-size: 6px;
+}
+/*
+.wave-banner1{
+    width: 50vw;
+    height: 100vh;
+    background-color: 	rgb(78, 91, 82);
+    -webkit-clip-path: circle(53.9% at 23% 100%);
+    clip-path: circle(53.9% at 23% 100%);
+}
+.wave-banner2{
+    width: 100vw;
+    height: 100vh;
+    z-index: 3000;
+    background-color: 	pink;
+    -webkit-clip-path: circle(59.9% at 77% 100%);
+    clip-path: circle(59.9% at 77% 100%);*/
+}
+/*--------------------------- Fim do Banner ---------------------------*/
+
+/*--------------------------- Começo dos Serviços ---------------------*/
+
 footer{
 	background-color: rgb(62, 61, 63);
-	position: fixed;
+	position: relative;
 	bottom: 0;
-	width: 100%;
+	width: 100vw;
 	font-size: 15px;
 }
 
@@ -52,12 +114,14 @@ footer > div{
 	padding-left: 20px;
 	width: 33%;
 	justify-content: space-between;
+	font-weight: bold;
 }
 
 #footer-3{
 	border-left: 2px solid white;
 	padding-left: 20px;
 	justify-content: space-between;
+	font-weight: bold;
 }
 
 .box-footer{
@@ -84,4 +148,6 @@ footer > div > div > div> img, .footer-link > img{
 #footer-line{
 	border: 2px solid rgb(82, 86, 89);
 }
+
+
 
