@@ -1,6 +1,20 @@
 html, body{
-	margin: 0 auto 0 auto;
+	margin: 0;
 	padding: 0;
+	font-family: 'Fira Sans', sans-serif;
+	color: rgb(62, 61, 63);
+}
+
+h2{
+	font-size: 32px;
+	position: relative;
+	top: 70px;
+	left: 130px;
+	color: black;
+	width: 40%;
+}
+
+input, select{
 	font-family: 'Fira Sans', sans-serif;
 }
 
@@ -65,13 +79,288 @@ html, body{
 /*--------------------------- Fim do Banner ---------------------------*/
 
 /*--------------------------- Começo dos Serviços ---------------------*/
+/*----------------------------fim dos serviços----------------------------*/
 
+/*--------------------------- Começo de sobre nós ---------------------*/
+#about-title{
+	width: 100%;
+	background-color: rgb(118, 131, 124);
+	display: flex;
+	justify-content: center;
+	height: 65px;
+	position: absolute;
+	top: 25px;
+}
+
+#about-title > h2{
+	position: static;
+	width: auto;
+	color: white;
+	align-self: center;
+}
+
+#about-us-section{
+	background-image: url(assets/lines-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-about{
+	width: 229px;
+	height: 206px;
+	background-color: white;
+	border-radius: 7px;
+	padding: 30px;
+	box-shadow: 15px 15px 18px 0px rgba(41,41,41,1);
+
+}
+
+.value-about{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	justify-content: space-around;
+	margin-bottom: 60px;
+
+}
+
+.above-card-about{
+	display: flex;
+	height: 50px;
+	align-items: center;
+}
+
+.above-card-about > img{
+	width: 28px;
+	margin-right: 10px;
+}
+
+.above-card-about > h4{
+	font-size: 20px;
+}
+
+#mission-about{
+	width: 65%;
+	align-self: center;
+	margin-top: 150px;
+}
+
+#last-about{
+	margin-bottom: 150px;
+}
+/*----------------------------fim de sobre nós---------------------------*/
+
+/*----------------------Começo de nossas redes---------------------------*/
+#network-section{
+	background-image: url(assets/fish-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+#network-line{
+	border-top: 3px solid black;
+	position: absolute;
+	left: 0;
+	top: 102px;
+	width: 330px;
+}
+
+.section-card > img{
+	width: 130px;
+	margin-bottom: 10px;
+}
+
+#network-cards-keeper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 85px;
+}
+
+.section-card{
+	background-color: white;
+	margin: 45px;
+	margin-bottom: 20px;
+	width: 234px;
+	height: 327px;
+	border-radius: 15px;
+	box-shadow: 3px 4px 14px 0px rgba(158,158,158,0.65);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	padding-top: 40px;
+	padding-right: 38px;
+	padding-left: 38px;
+
+	font-size: 21px;
+}
+
+#network-newsletter{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#network-newsletter > input{
+	width: 640px;
+	height: 45px;
+	border-radius: 15px;
+	border: 0;
+	box-shadow: 3px 4px 14px 0px rgba(158,158,158,0.65);
+	padding-left: 30px;
+	font-size: 15px;
+	outline-width: 0;
+}
+
+::placeholder{
+	color: rgb(170, 170, 170);
+}
+
+#network-newsletter > button{
+	background-color: rgb(170, 170, 170);
+	border: none;
+	margin: 25px;
+	margin-bottom: 70px;
+	width: 200px;
+	height: 55px;
+	color: white;
+	font-size: 23px;
+	border-radius: 10px;
+	outline-width: 0;
+	box-shadow: 3px 4px 14px 0px rgba(158,158,158,0.65);
+}
+
+#network-newsletter > p{
+	font-size: 21px;
+}
+/*---------------fim de nossas redes----------------*/
+
+/*---------------começo de contato------------------*/
+
+#contact-section{
+	position: relative;
+}
+
+#contact-line{
+	border-top: 3px solid black;
+	position: absolute;
+	left: 0;
+	top: 102px;
+	width: 240px;
+}
+
+#contact-section > form{
+	width: 100%;
+	margin-top: 140px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 70px;
+}
+
+.green-side{
+	display: flex;
+	flex-direction: column;
+}
+
+.green-side > label{
+	font-weight: bolder;
+	font-size: 17px;
+	margin-bottom: 14px;
+}
+
+.green-side > input{
+	background-color: rgb(20, 49, 37);
+	color: white;
+	height: 50px;
+	width: 450px;
+	border-radius: 25px;
+	border: none;
+	padding-left: 20px;
+	font-size: 15px;
+	margin-bottom: 14px;
+	outline-style: none;
+}
+
+.green-side > ::placeholder{
+	color: white;
+}
+
+.border-box-contact{
+	border: 4px solid rgb(20, 49, 37);
+	height: 45px;
+	border-radius: 15px;
+	outline-style: none;
+}
+
+#message-contact{
+	border: 4px solid rgb(20, 49, 37);
+	border-radius: 15px;
+	outline-style: none;
+	resize: none;
+	height: 80px;
+	font-weight: bolder;
+	padding: 20px;
+}
+
+#contact-select{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#contact-select > select{
+	width: 250px;
+	margin-bottom: 40px;
+	padding-left: 20px;
+}
+
+#contact-subject{
+	margin-bottom: 40px;
+	height: 40px;
+	padding-left: 20px;
+	font-weight: bolder;
+}
+
+#send-data{
+	display: flex;
+	flex-direction: column;
+	width: 610px;
+	padding-top: 40px;
+}
+
+#send-data > button{
+	width: 200px;
+	margin-top: 27px;
+	align-self: center;
+	color: white;
+	background-color: rgb(20, 49, 37);
+	border: none;
+	border-radius: 5px;
+	height: 50px;
+	font-size: 18px;
+}
+
+#send-data > ::placeholder{
+	color: rgb(62, 61, 63);
+}
+
+/*----------------fim de contato-------------*/
+
+/*----------------começo de footer------------*/
 footer{
 	background-color: rgb(62, 61, 63);
 	position: relative;
 	bottom: 0;
-	width: 100vw;
+	width: 100%;
 	font-size: 15px;
+	overflow: hidden;
 }
 
 footer > div{
@@ -114,14 +403,12 @@ footer > div{
 	padding-left: 20px;
 	width: 33%;
 	justify-content: space-between;
-	font-weight: bold;
 }
 
 #footer-3{
 	border-left: 2px solid white;
 	padding-left: 20px;
 	justify-content: space-between;
-	font-weight: bold;
 }
 
 .box-footer{
@@ -148,6 +435,4 @@ footer > div > div > div> img, .footer-link > img{
 #footer-line{
 	border: 2px solid rgb(82, 86, 89);
 }
-
-
-
+/*--------------fim de footer--------------*/
