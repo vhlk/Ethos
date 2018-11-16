@@ -1,484 +1,527 @@
 html, body{
 	margin: 0;
 	padding: 0;
-	width: 100%;
-	font-family: 'Roboto', sans-serif;
-}
-
-img{
-	width: 100%;
-	margin: 0;
-}
-
-#first-section{
-	width: 100%;
-	height: 750px;
-	overflow: hidden;
-	position: relative;
-	top: 0;
-}
-
-.carousel{
-	margin: 0;
-	width: 100%;
-	padding: 0;
-	position: relative;
-	top: -13px;
-	height: 113%;
-	z-index: 0;
-}
-
-.green-layer{
-	width: 100%;
-	height: 150%;
-	background-color: rgba(140, 186, 78, 0.4);
-	position: absolute;
-	top: 0;
-	pointer-events: none;
-	z-index: 1000;
-}
-
-.title{
-	width: 100%;
-	position: absolute;
-	top: 26px;
-	text-align: center;
-	color: white;
-	font-size: 25px;
-}
-
-.title > img{
-	width: 172px;
-	margin-bottom: 0;
-}
-
-.title > p{
-	margin-top: 4px;
-}
-
-#l1, #l2{
-	position: absolute;
-	width: 42%;
-	top: 20%;	
-}
-
-#l1{
-	left: 0;
-}
-
-#l2{
-	right: 0;
-}
-
-#second-section{
-	background: white;
-	position: absolute;
-	top: 750px;
-	width: 100%;
-	height: 110%;
-	z-index: 1000;
-}
-
-
-section{
-	color: #8CBA4E;
+	font-family: 'Fira Sans', sans-serif;
+	color: rgb(62, 61, 63);
 }
 
 h2{
-	font-size: 33px;
-	font-weight: lighter;
-}
-
-#title-pics{
-	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 60px;
-}
-
-#l11, #l22{
-	border-top: 1px solid #8CBA4E;
-	position: absolute;
-	width: 40%;
-	top: 69px;
-}
-
-#l11{
-	left: 0;
-}
-
-#l22{
-	right: 0;
-}
-
-#people{
-	display: flex;
-	justify-content: center;
-	justify-content: space-around;
-	padding-left: 16%;
-	padding-right: 16%;
-	flex-wrap: wrap;
-}
-
-.box{
-	width: 258px;
-	height: 472px;
-	overflow: hidden;
-	text-align: center;
-	box-shadow: 0px 0px 5px 1px rgba(189,189,189,1);
+	font-size: 32px;
 	position: relative;
-}
-
-.box > img{
-	height: 424px;
-	width: auto;
-	position: relative;
-	right: 25px;
-}
-
-.box > p{
+	top: 70px;
+	left: 130px;
 	color: black;
-	font-size: 26px;
-	margin-top: 8px;
-	margin-bottom: 8px;
-	z-index: 1;
-	position: relative;
 }
 
-#rafael, #victor, #pam{
-	border-top: 1px solid #8CBA4E;
-	position: relative;
-	top: 26px;
-	z-index: 1;
+input, select{
+	font-family: 'Fira Sans', sans-serif;
 }
 
-#rafael{
-	width: 140px;
-}
-
-#victor{
-	width: 150px;
-}
-
-#pam{
-	width: 180px;
-}
-
-#adjust{
-	right: 80px;
-}
-
-.number{
-	display: flex;
-	width: 65px;
+/*-----------------começo do header-----------------*/
+header{
+	width: 100%;
 	background-color: white;
-	font-size: 25px;
-	border-radius: 10px 10px 0 0;
+	height: 50px;
 	color: black;
-	height: 35px;
+	position: fixed;
+	top: 0;
+	z-index: 100000;
+}
+
+#burger-header{
+	width: 50px;
 	position: absolute;
-	bottom: 0;
-	margin-left: auto;
-	margin-right: auto;
-	left: 0;
-	right: 0;
-	padding-left: 5px;
+	right: 50px;
 }
 
-.number > img{
-	width: 30px;
-}
-
-.number > p{
-	position: relative;
-	left: 10px;
-	bottom: 20px;
-}
-
-#third-section{
-	background-color: #FBFDF9;
-	position: absolute;
-	top: 220%;
-	height: 95%;
+#burger-menu{
 	width: 100%;
-}
-
-#title-send{
-	margin-top: 50px;
-	text-align: center;
-	z-index: 3;
-}
-
-#l111, #l222{
-	border-top: 1px solid #8CBA4E;
-	width: 37%;
-	position: absolute;
-	top: 60px;
-}
-
-#l111{
-	right: 0;
-}
-
-#l222{
-	left: 0;
-}
-
-form{
-	width: 100%;
+	background-color: white;
+	position: fixed;
+	top: 50px;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	overflow: hidden;
-}
-
-#data{
-	display: flex;
-	justify-content: center;
-	width: 80%;
-	flex-wrap: wrap;
-}
-
-input{
-	background-color: #FBFDF9;
-	border: none;
-	border-bottom: 1px solid rgba(140, 186, 78, 0.4);
+	flex-direction: column;
+	align-items: center;
 	font-size: 20px;
-	width: 377px;
-	margin: 0;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	outline-width: 0;
+	display: none;
+	height: 180px;
 }
 
-label{
-	font-size: 12px;
+#burger-menu > a{
+	color: black;
+	text-decoration: none;
+}
+/*-----------------fim do header-----------------*/
+
+
+/*----------------- Começo do Banner ---------------------*/
+
+#banner{
+	width: 100%;
+	height: 100%;
+}
+
+#banner img{
+    width: 60vw;
+    height: 65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 175px auto 10px auto;
+}
+
+#banner #banner-text{
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 100;
+    color: rgb(109, 108, 110);
+    font-size: 16px;
+	text-align: center;
+	margin: 0 auto 100px auto;
 	display: block;
 }
+/*banner mobile*/
 
-::placeholder{
-	color: rgb(220, 220, 220);
+.carousel-values{
+	display: none;
+
 }
 
-.block{
-	margin: 55px;
-	margin-top: 82px;
-	margin-bottom: 0px;
-}
+@media(max-width:850px){ 
 
-
-
-#btn{
-	color: rgb(140, 186, 78);
-	text-decoration: none;
-	font-size: 35px;
-	width: 100%;
-}
-
-#btn-div{
-	width: 100%;
-	text-align: center;
-	margin-top: 20px;
-}
-
-#feedback{
-	width: 80%;
-	border: none;
-	border-bottom: 1px solid rgb(140, 186, 78);
-}
-
-textarea{
-	width: 100%;
-	height: 200px;
-	background-color: #FBFDF9;
-	border: none;
-	text-decoration-style: none;
-	outline-width: 0;
-	resize: none;
-	font-size: 16px;
-}
-
-#last-line{
-	width: 60%;
-	border-top: 1px solid rgb(140, 186, 78);
-	margin-bottom: 20px;
-}
-
-
-
-@media(max-width: 1250px) {
-    #l1, #l2 {
-        width: 38%;
-    }
-
-    #l11, #l22{
-    	width: 36%;
-    }
-
-    #l111, #l222{
-    	width: 32%;
-    }
-
-    #people{
-    	padding-left: 5%;
-    	padding-right: 5%;
-    }
-
-    #second-section{
-    	top: 650px;
-    }
-}
-
-@media(max-width: 1000px){
-	#second-section{
-		top: 540px;
+	#banner{
+	    background-color: rgb(212,241,210); 
 	}
+
+	#banner img{
+	    width: 75vw;
+	    height: 25vh;
+	    margin: 100px auto 0 auto;
+	}
+
+	#banner #banner-text{
+	    font-size: 6px;
+	}
+}
+.carousel-values{
+	display: none;
+}
+
+/*
+.wave-banner1{
+    width: 50vw;
+    height: 100vh;
+    background-color: 	rgb(78, 91, 82);
+    -webkit-clip-path: circle(53.9% at 23% 100%);
+    clip-path: circle(53.9% at 23% 100%);
+}
+.wave-banner2{
+    width: 100vw;
+    height: 100vh;
+    z-index: 3000;
+    background-color: 	pink;
+    -webkit-clip-path: circle(59.9% at 77% 100%);
+    clip-path: circle(59.9% at 77% 100%);*/
+
+/*--------------------------- Fim do Banner ---------------------------*/
+
+/*--------------------------- Começo dos Serviços ---------------------*/
+/*----------------------------fim dos serviços----------------------------*/
+
+/*--------------------------- Começo de sobre nós ---------------------*/
+#about-title{
+	width: 100%;
+	background-color: rgb(118, 131, 124);
+	display: flex;
+	justify-content: center;
+	height: 65px;
+	position: absolute;
+	top: 25px;
+}
+
+#about-title > h2{
+	position: static;
+	width: auto;
+	color: white;
+	align-self: center;
+}
+
+#about-us-section{
+	background-image: url(assets/lines-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-about{
+	width: 229px;
+	height: 206px;
+	background-color: white;
+	border-radius: 7px;
+	padding: 30px;
+	box-shadow: 15px 15px 18px 0px rgba(41,41,41,1);
+
+}
+
+.value-about{
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	justify-content: space-around;
+	margin-bottom: 60px;
+
+}
+
+.above-card-about{
+	display: flex;
+	height: 50px;
+	align-items: center;
+}
+
+.above-card-about > img{
+	width: 28px;
+	margin-right: 10px;
+}
+
+.above-card-about > h4{
+	font-size: 20px;
+}
+
+#mission-about{
+	width: 65%;
+	align-self: center;
+	margin-top: 150px;
+}
+
+#last-about{
+	margin-bottom: 150px;
 }
 
 @media(max-width: 900px){
-	.box{
-		margin-right: 100px;
-		margin-left: 100px;
+	#first-about, #last-about{
+		display: none;
 	}
 
-	#second-section{
-		top: 500px;
+	#margin-mission{
+		margin-bottom: 60px;
 	}
 
-	#third-section{
-		top: 2200px;
+	#mission-about{
+		flex-direction: column;
+		align-items: center;
 	}
 
-
-	.box{
-		margin-bottom: 50px;
+	.carousel-values{
+		width: 294px;
+		align-self: center;
+		
+		margin-bottom: 60px;
+		z-index: 1;
 	}
 
-    #l1, #l2 {
-        width: 32%;
-    }
-
-    #l11, #l22{
-    	width: 32%;
-    }
-
-    #l111, #l222{
-    	width: 28%;
-    }
-
-    .title > img{
-		width: 140px;
+	.card-about{
+		box-shadow: none;
+		margin-left: 5px;
+		margin-right: 5px;
 	}
 
-@media(max-width: 800px){
-	#second-section{
-		top: 440px;
+	.carousel-values > div > div{
+		height: 206px;
 	}
 
-	#third-section{
-		top: 2150px;
-	}
-
-	.title > img{
-		width: 100px;
-	}
-
-	.title p{
-		font-size: 20px;
-	}
-
-	#l11, #l22{
-    	width: 30%;
-    }
-
-    #l111, #l222{
-    	width: 22%;
-    }
-}
-
-@media(max-width: 700px){
-	#second-section{
-		top: 370px;
-	}
-
-	#third-section{
-		top: 2100px;
-	}
-
-	#l11, #l22{
-    	width: 30%;
+	#about-band{
+		width: 100%;
+		height: 120px;
+		background-color: #E6E8FA;
+		position: absolute;
+		bottom: 130px;
+		z-index: 0;
 	}
 }
+/*----------------------------fim de sobre nós---------------------------*/
 
-@media(max-width: 600px){
-	#l1, #l2 {
-        width: 20%;
-    }
-
-    #l11, #l22{
-    	width: 27%;
-    }
-
-    #l111, #l222{
-    	width: 18%;
-    }
-
-    #second-section{
-    	top: 320px;
-    }
-
-    #third-section{
-    	top: 2050px;
-    }
+/*----------------------Começo de nossas redes---------------------------*/
+#network-section{
+	background-image: url(assets/fish-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 }
 
-@media(max-width: 500px){
-	.box{
-		margin: 0;
-	}
-
-	.box{
-		margin-bottom: 30px;
-	}
-
-	#second-section{
-		top: 270px;
-	}
-
-	#third-section{
-		top: 1950px;
-	}
-
-	#l11, #l22{
-    	width: 22%;
-    }
-
-    #l111, #l222{
-    	width: 13%;
-    }
+#network-line{
+	border-top: 3px solid black;
+	position: absolute;
+	left: 0;
+	top: 102px;
+	width: 330px;
 }
 
-@media(max-width: 430px){
-	#second-section{
-		top: 190px;
-	}
-
-	#third-section{
-		top: 1900px;
-	}
-
-	#l11, #l22{
-    	width: 12%;
-    }
-
-    #l111, #l222{
-    	width: 3%;
-    }
-
-    input{
-    	width: 270px;
-    }
-
-    h2{
-    	font-size: 30px;
-    }
+.section-card > img{
+	width: 130px;
+	margin-bottom: 10px;
 }
+
+#network-cards-keeper{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 85px;
+}
+
+.section-card{
+	background-color: white;
+	margin: 45px;
+	margin-bottom: 20px;
+	width: 234px;
+	height: 327px;
+	border-radius: 15px;
+	box-shadow: 3px 4px 14px 0px rgba(158,158,158,0.65);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+
+	padding-top: 40px;
+	padding-right: 38px;
+	padding-left: 38px;
+
+	font-size: 21px;
+}
+
+#network-newsletter{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#network-newsletter > input{
+	width: 640px;
+	height: 45px;
+	border-radius: 15px;
+	border: 0;
+	box-shadow: 3px 4px 14px 0px rgba(158,158,158,0.65);
+	padding-left: 30px;
+	font-size: 15px;
+	outline-width: 0;
+}
+
+::placeholder{
+	color: rgb(170, 170, 170);
+}
+
+#network-newsletter > button{
+	background-color: rgb(170, 170, 170);
+	border: none;
+	margin: 25px;
+	margin-bottom: 70px;
+	width: 200px;
+	height: 55px;
+	color: white;
+	font-size: 23px;
+	border-radius: 10px;
+	outline-width: 0;
+	box-shadow: 3px 4px 14px 0px rgba(158,158,158,0.65);
+}
+
+#network-newsletter > p{
+	font-size: 21px;
+}
+/*---------------fim de nossas redes----------------*/
+
+/*---------------começo de contato------------------*/
+
+#contact-section{
+	position: relative;
+}
+
+#contact-line{
+	border-top: 3px solid black;
+	position: absolute;
+	left: 0;
+	top: 102px;
+	width: 240px;
+}
+
+#contact-section > form{
+	width: 100%;
+	margin-top: 140px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 70px;
+}
+
+.green-side{
+	display: flex;
+	flex-direction: column;
+}
+
+.green-side > label{
+	font-weight: bolder;
+	font-size: 17px;
+	margin-bottom: 14px;
+}
+
+.green-side > input{
+	background-color: rgb(20, 49, 37);
+	color: white;
+	height: 50px;
+	width: 450px;
+	border-radius: 25px;
+	border: none;
+	padding-left: 20px;
+	font-size: 15px;
+	margin-bottom: 14px;
+	outline-style: none;
+}
+
+.green-side > ::placeholder{
+	color: white;
+}
+
+.border-box-contact{
+	border: 4px solid rgb(20, 49, 37);
+	height: 45px;
+	border-radius: 15px;
+	outline-style: none;
+}
+
+#message-contact{
+	border: 4px solid rgb(20, 49, 37);
+	border-radius: 15px;
+	outline-style: none;
+	resize: none;
+	height: 80px;
+	font-weight: bolder;
+	padding: 20px;
+}
+
+#contact-select{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#contact-select > select{
+	width: 250px;
+	margin-bottom: 40px;
+	padding-left: 20px;
+}
+
+#contact-subject{
+	margin-bottom: 40px;
+	height: 40px;
+	padding-left: 20px;
+	font-weight: bolder;
+}
+
+#send-data{
+	display: flex;
+	flex-direction: column;
+	width: 610px;
+	padding-top: 40px;
+}
+
+#send-data > button{
+	width: 200px;
+	margin-top: 27px;
+	align-self: center;
+	color: white;
+	background-color: rgb(20, 49, 37);
+	border: none;
+	border-radius: 5px;
+	height: 50px;
+	font-size: 18px;
+}
+
+#send-data > ::placeholder{
+	color: rgb(62, 61, 63);
+}
+
+/*----------------fim de contato-------------*/
+
+/*----------------começo de footer------------*/
+footer{
+	background-color: rgb(62, 61, 63);
+	position: relative;
+	bottom: 0;
+	width: 100%;
+	font-size: 15px;
+}
+
+footer > div{
+	height: 140px;
+	display: flex;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	padding-left: 0;
+}
+
+#footer-ball{
+	align-self: center;
+	background-color: white;
+	width: 140px;
+	height: 140px;
+	border-radius: 50%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#footer-logo{
+	width: 90px;
+	align-self: center;
+}
+
+.footer-link{
+	text-decoration-color: transparent;
+	color: white;
+}
+
+#footer-1{
+	width: 33%;
+}
+
+#footer-2{
+	border-left: 2px solid white;
+	padding-left: 20px;
+	width: 33%;
+	justify-content: space-between;
+}
+
+#footer-3{
+	border-left: 2px solid white;
+	padding-left: 20px;
+	justify-content: space-between;
+}
+
+.box-footer{
+	display: flex;
+	height: 35px;
+	align-items: center;
+}
+
+footer > div > div{
+	display: flex;
+	flex-direction: column;
+}
+
+footer > div > div > div> img, .footer-link > img{
+	width: 33px;
+	margin: 0;
+	margin-right: 15px;
+}
+
+#right-height{
+	height: 35px;
+}
+
+#footer-line{
+	border: 2px solid rgb(82, 86, 89);
+}
+/*--------------fim de footer--------------*/
