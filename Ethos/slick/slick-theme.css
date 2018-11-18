@@ -78,13 +78,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-@media(max-width: 900px){
-    .slick-prev:before,
-    .slick-next:before{
-        font-size: 150px;
-    }
-}
-
 .slick-prev
 {
     left: -88px;
@@ -209,4 +202,51 @@
 {
     opacity: .75;
     color: black;
+}
+
+
+@media(max-width: 900px){
+    .slick-prev:before,
+    .slick-next:before{
+        font-size: 150px;
+    }
+}
+
+@media(max-width: 500px){
+    .slick-prev:before,
+    .slick-next:before{
+        font-size: 100px;
+    }
+
+    .slick-prev, .slick-next{
+        top: 100px;
+    }
+
+    .slick-prev{
+        left: -80px;
+    }
+
+    .slick-next{
+        right: -65px;
+    }
+}
+
+@media(max-width: 400px){
+    .slick-prev{
+        left: -50px;
+    }
+
+    .slick-next{
+        right: -35px;
+    }    
+}
+
+@media(max-width: 350px){
+    .slick-prev{
+        left: -30px;
+    }
+
+    .slick-next{
+        right: -15px;
+    }
 }
