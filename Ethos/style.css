@@ -5,51 +5,132 @@ html, body{
 	color: rgb(62, 61, 63);
 }
 
+
 h2{
 	font-size: 32px;
-	position: relative;
-	top: 70px;
+	position: absolute;
 	left: 130px;
-	color: black;
+	top: 15px;
+	color: rgb(62, 61, 63);
 }
 
 input, select{
 	font-family: 'Fira Sans', sans-serif;
 }
 
+
 /*-----------------começo do header-----------------*/
 header{
 	width: 100%;
 	background-color: white;
-	height: 50px;
+	height: 60px;
 	color: black;
 	position: fixed;
 	top: 0;
 	z-index: 100000;
+	overflow: hidden; /*Tira o lag da nav no scroll*/
+	border-bottom: 1px solid rgb(194, 194, 194);
+}
+
+#header-logo{
+	position: absolute;
+	width: 50px;
+	top: 5px;
+	left: 5%;
 }
 
 #burger-header{
-	width: 50px;
+	width: 40px;
 	position: absolute;
-	right: 50px;
+	right: 5%;
+	top: 10px;
 }
 
 #burger-menu{
 	width: 100%;
 	background-color: white;
 	position: fixed;
-	top: 50px;
+	top: 61px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	font-size: 20px;
 	display: none;
 	height: 180px;
+	padding-left: 10%;
 }
 
 #burger-menu > a{
 	color: black;
 	text-decoration: none;
+}
+
+#header-network{
+	display: flex;
+	justify-content: center;
+}
+
+#header-network > img{
+	width: 35px;
+	margin: 5px;
+}
+
+#burger-menu> hr{
+	position: absolute;
+	top: 114px;
+	left: 5%;
+	width: 80%;
+}
+
+#header-links-1{
+	display: none;
+}
+
+#header-links-2{
+	display: none;
+}
+
+
+@media(min-width: 901px){
+	#burger-header{
+		display: none;
+	}
+
+	#header-links-1{
+		display: flex;
+		position: absolute;
+		left: 20%;
+		top: 25px;
+	}
+
+	#header-logo{
+		width: 60px;
+		left: 10%;
+	}
+
+	header{
+		height: 70px;
+		overflow: hidden;
+	}
+
+	#header-links-1 > a{
+		color: black;
+		text-decoration: none;
+		margin-right: 20px;
+		font-size: 20px;
+	}
+
+	#header-links-2 > a > img{
+		width: 40px;
+		margin: 10px;
+	}
+
+	#header-links-2{
+		display: flex;
+		position: absolute;
+		right: 10%;
+		top: 5px;
+	}
 }
 /*-----------------fim do header-----------------*/
 
@@ -153,6 +234,7 @@ header{
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	overflow: hidden;
 }
 
 .card-about{
@@ -223,8 +305,8 @@ header{
 
 	.card-about{
 		box-shadow: none;
-		margin-left: 5px;
-		margin-right: 5px;
+		margin-left: 10px;
+		margin-right: 10px;
 	}
 
 	.carousel-values > div > div{
@@ -239,6 +321,19 @@ header{
 		bottom: 130px;
 		z-index: 0;
 	}
+
+	@media(max-width: 500px){
+		.card-about{
+			width: 150px;
+			height: 220px;
+		}
+
+		.carousel-values{
+			width: 230px;
+			height: 150px;
+			margin-bottom: 180px;
+		}
+	}
 }
 /*----------------------------fim de sobre nós---------------------------*/
 
@@ -248,14 +343,15 @@ header{
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
+	overflow: hidden;
 }
 
 #network-line{
-	border-top: 3px solid black;
+	border-top: 3px solid rgb(20, 49, 37);
 	position: absolute;
 	left: 0;
-	top: 102px;
-	width: 330px;
+	top: 70px;
+	width: 324px;
 }
 
 .section-card > img{
@@ -268,6 +364,7 @@ header{
 	display: flex;
 	justify-content: center;
 	margin-top: 85px;
+	flex-wrap: wrap;
 }
 
 .section-card{
@@ -298,7 +395,7 @@ header{
 }
 
 #network-newsletter > input{
-	width: 640px;
+	width: 55%;
 	height: 45px;
 	border-radius: 15px;
 	border: 0;
@@ -328,20 +425,77 @@ header{
 
 #network-newsletter > p{
 	font-size: 21px;
+	text-align: center;
 }
+
+@media(max-width: 900px){
+	#network-section > h2{
+		left: 50%;
+		right: 50%;
+		transform: translate(-50%, -50%); 
+		width: 200px;
+	}
+
+	#network-line{
+		left: 50%;
+		right: 50%;
+		transform: translate(-50%, -50%); 
+		width: 220px;
+		top: 60px;
+		border-top: 1px solid rgb(20, 49, 37);
+	}
+}
+
+@media(max-width: 600px){
+	#network-newsletter > p{
+		font-size: 18px;
+	}
+
+	#network-newsletter > input{
+		width: 70%;
+	}
+}
+
+
+@media(max-width: 350px){
+	.section-card > img{
+		width: 100px;
+		margin-bottom: 0;
+	}
+
+	.section-card > p{
+		font-size: 18px;
+	}
+
+	#network-newsletter > input{
+		width: 230px;
+	}
+
+	.section-card{
+		width: 170px;
+		height: 270px;
+		margin-left: 0;
+		margin-right: 0;
+		padding-top: 15px;
+	}
+}
+
 /*---------------fim de nossas redes----------------*/
 
 /*---------------começo de contato------------------*/
 
 #contact-section{
 	position: relative;
+	width: 100%;
+	overflow: hidden;
+	background-color: white;
 }
 
 #contact-line{
-	border-top: 3px solid black;
+	border-top: 3px solid rgb(20, 49, 37);
 	position: absolute;
 	left: 0;
-	top: 102px;
+	top: 70px;
 	width: 240px;
 }
 
@@ -408,6 +562,7 @@ header{
 	width: 250px;
 	margin-bottom: 40px;
 	padding-left: 20px;
+	background-color: white;
 }
 
 #contact-subject{
@@ -440,6 +595,138 @@ header{
 	color: rgb(62, 61, 63);
 }
 
+@media(max-width: 1100px){
+	.green-side > input{
+		width: 400px;
+	}
+
+	#send-data{
+		width: 550px;
+	}
+}
+
+@media(max-width: 1000px){
+	.green-side > input{
+		width: 350px;
+	}
+
+	#send-data{
+		width: 500px;
+	}
+
+	#contact-select > select{
+		width: 230px;
+	}
+}
+
+
+@media(max-width: 900px){
+	#contact-section > h2{
+		left: 50%;
+		right: 50%;
+		transform: translate(-50%, -50%); 
+		width: 110px;
+	}
+
+	#contact-line{
+		left: 50%;
+		right: 50%;
+		transform: translate(-50%, -50%); 
+		width: 150px;
+		top: 60px;
+		border-top: 1px solid rgb(20, 49, 37);
+	}
+
+	#contact-section > form{
+		display: flex;
+		flex-direction: column;
+	}
+
+	#get-data{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.green-side{
+		align-self: center;
+	}
+
+	#send-data{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#contact-select{
+		display: flex;
+		justify-content: center;
+		margin-bottom: 30px;
+	}
+
+	#contact-select > select{
+		margin: 8px;
+	}
+
+	.green-side > input{
+		width: 450px;
+	}
+
+	#contact-subject{
+		width: 450px;
+	}
+
+	#message-contact{
+		width: 430px;
+	}
+}
+
+@media(max-width: 500px){
+	.green-side > input{
+		width: 300px;
+	}
+
+	#message-contact{
+		width: 255px;
+		margin: 10px;
+	}
+
+	#contact-subject{
+		width: 273px;
+		margin: 5px;
+	}
+
+	#contact-select{
+		display: flex;
+		flex-direction: column;
+		margin: 5px;
+	}
+
+	#contact-select > select{
+		width: 300px;
+		align-self: center;
+	}
+}
+
+@media(max-width: 400px){
+	.green-side > input{
+		width: 250px;
+	}
+
+	#message-contact{
+		width: 230px;
+	}
+
+	#contact-subject{
+		width: 248px;
+	}
+
+	#contact-select > select{
+		width: 275px;
+	}
+}
+
 /*----------------fim de contato-------------*/
 
 /*----------------começo de footer------------*/
@@ -449,6 +736,7 @@ footer{
 	bottom: 0;
 	width: 100%;
 	font-size: 15px;
+	padding-top: 1px;
 }
 
 footer > div{
@@ -523,5 +811,47 @@ footer > div > div > div> img, .footer-link > img{
 
 #footer-line{
 	border: 2px solid rgb(82, 86, 89);
+	margin-top: 3px;
+}
+
+@media(max-width: 900px){
+	#footer-1{
+		width: 30%;
+	}
+
+	#footer-2{
+		width: 30%;
+	}
+}
+
+@media(max-width: 700px){
+	footer > div{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		align-items: center;
+		height: 390px;
+	}
+
+	#footer-1, #footer-2, #footer-3{
+		margin: 0;
+		border: none;
+		padding: 0;
+		width: 200px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	#footer-ball{
+		margin-bottom: 25px;
+		height: 207px;
+	}
+
+	.box-footer{
+		padding-bottom: 20px;
+	}
+
+
 }
 /*--------------fim de footer--------------*/

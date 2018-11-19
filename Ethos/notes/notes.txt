@@ -1,5 +1,1 @@
 Pesquisar SEO
-
-1 - corrigir footer
-2 - corrigir margem dos títulos
-3 - corrigir header saindo da página
