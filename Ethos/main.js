@@ -18,7 +18,6 @@ $(function(){
 
 $(window).scroll(function() {
     var height = $(window).scrollTop();
-    console.log($('a').data('about-us-section'));
     if(height > 600){
     	$('[data-secname="about-us-section"]').css('fontWeight', 'bolder');
     	$('[data-secname="network-section"]').css('fontWeight', 'regular');
@@ -34,7 +33,6 @@ $(window).scroll(function() {
     	$('[data-secname="network-section"]').css('fontWeight', 'regular');
     	$('[data-secname="contact-section"]').css('fontWeight', 'bolder');
     }
-    console.log(height);
 });
 
 $(document).ready(function(){

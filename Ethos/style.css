@@ -58,6 +58,7 @@ header{
 	display: none;
 	height: 180px;
 	padding-left: 10%;
+	border-bottom: 1px solid rgb(194, 194, 194);
 }
 
 #burger-menu > a{
@@ -165,7 +166,6 @@ header{
 
 .carousel-values{
 	display: none;
-
 }
 
 @media(max-width:850px){ 
