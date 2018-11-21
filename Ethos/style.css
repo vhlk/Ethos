@@ -58,6 +58,7 @@ header{
 	display: none;
 	height: 180px;
 	padding-left: 10%;
+	padding-top: 5px;
 	border-bottom: 1px solid rgb(194, 194, 194);
 }
 
@@ -277,8 +278,10 @@ header{
 	margin-top: 150px;
 }
 
-#last-about{
-	margin-bottom: 150px;
+@media(max-width: 1000px){
+	.card-about{
+		width: 190px;
+	}
 }
 
 @media(max-width: 900px){
@@ -307,6 +310,7 @@ header{
 		box-shadow: none;
 		margin-left: 10px;
 		margin-right: 10px;
+		width: 215px;
 	}
 
 	.carousel-values > div > div{
@@ -457,7 +461,9 @@ header{
 }
 
 
-@media(max-width: 350px){
+
+
+@media(max-width: 500px){
 	.section-card > img{
 		width: 100px;
 		margin-bottom: 0;
@@ -474,8 +480,7 @@ header{
 	.section-card{
 		width: 170px;
 		height: 270px;
-		margin-left: 0;
-		margin-right: 0;
+		margin: 10px;
 		padding-top: 15px;
 	}
 }
@@ -529,6 +534,10 @@ header{
 	font-size: 15px;
 	margin-bottom: 14px;
 	outline-style: none;
+}
+
+#last-green-side{
+	margin-bottom: 0;
 }
 
 .green-side > ::placeholder{
@@ -657,6 +666,7 @@ header{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		padding-top: 15px;
 	}
 
 	#contact-select{
@@ -687,14 +697,18 @@ header{
 		width: 300px;
 	}
 
+	#send-data{
+		padding-top: 0;
+	}
+
 	#message-contact{
-		width: 255px;
+		width: 272px;
 		margin: 10px;
 	}
 
 	#contact-subject{
-		width: 273px;
-		margin: 5px;
+		width: 293px;
+		margin-bottom: 10px;
 	}
 
 	#contact-select{
@@ -704,8 +718,9 @@ header{
 	}
 
 	#contact-select > select{
-		width: 300px;
+		width: 320px;
 		align-self: center;
+		margin-bottom: 14px;
 	}
 }
 

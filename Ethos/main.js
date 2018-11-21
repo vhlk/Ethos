@@ -40,7 +40,13 @@ $(document).ready(function(){
 		e.preventDefault();
 		var sec = $(this).attr('data-secname');
 		$('body, html').animate({
-			scrollTop: ($('#' + sec).offset().top - Number(70))
+			scrollTop: ($('#' + sec).offset().top - Num(70))
 		}, 500);
 	});
+});
+
+$(window).click(function(e) {
+    if(e.target.id !== 'burger-menu' && e.target.id !== 'burger-header'){
+        $('#burger-menu').slideUp(300);
+    }
 });
