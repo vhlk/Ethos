@@ -36,9 +36,7 @@ $(window).scroll(function() {
 });
 
 $(document).ready(function(){
-	$('.smoothscroll').on('click', function(e){
-		e.preventDefault();
-		var sec = $(this).attr('data-secname');
+	$('.smoothscroll').on('click', function(e){e.preventDefault(); var sec = $(this).attr('data-secname');
 		$('body, html').animate({
 			scrollTop: ($('#' + sec).offset().top - Num(70))
 		}, 500);
