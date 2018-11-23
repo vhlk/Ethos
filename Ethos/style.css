@@ -30,7 +30,6 @@ header{
 	z-index: 100000;
 	overflow: hidden; /*Tira o lag da nav no scroll*/
 	border-bottom: 1px solid rgb(194, 194, 194);
-
 }
 
 #header-logo{
@@ -109,11 +108,9 @@ header{
 	#header-logo{
 		width: 60px;
 		left: 10%;
-		
 	}
-	
+
 	header{
-		
 		height: 70px;
 		overflow: hidden;
 	}
@@ -142,14 +139,14 @@ header{
 
 /*----------------- Começo do Banner ---------------------*/
 
-.banner{
+#banner{
 	width: 100%;
 	height: 100%;
 }
 
-.banner-logo{
-    width: 55%;
-    height: 65%;
+#banner img{
+    width: 60vw;
+    height: 65vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -157,7 +154,7 @@ header{
     margin: 175px auto 10px auto;
 }
 
-.banner .banner-text{
+#banner #banner-text{
     font-family: 'Fira Sans', sans-serif;
     font-weight: 100;
     color: rgb(109, 108, 110);
@@ -166,40 +163,199 @@ header{
 	margin: 0 auto 100px auto;
 	display: block;
 }
+/*banner mobile*/
 
-
-@media(max-width:900px){ /*banner mobile*/
-
-	.banner .filtro-banner{
-		width: 100%;
-		height: 100%;
-		margin-top: -40%;
-		background-color: rgb(212, 241, 210);
-	}
-
-	.banner-logo{
-	    width: 60%;
-		height: 30%;
-		padding-top: 40%;
-	}
-
-	.banner .banner-text{
-		font-size: 14px;
-		padding-bottom: 55%;
-	}
+.carousel-values{
+	display: none;
 }
 
+@media(max-width:850px){ 
 
+	#banner{
+	    background-color: rgb(212,241,210); 
+	}
+
+	#banner img{
+	    width: 75vw;
+	    height: 25vh;
+	    margin: 100px auto 0 auto;
+	}
+
+	#banner #banner-text{
+	    font-size: 6px;
+	}
+}
+.carousel-values{
+	display: none;
+}
+
+/*
+.wave-banner1{
+    width: 50vw;
+    height: 100vh;
+    background-color: 	rgb(78, 91, 82);
+    -webkit-clip-path: circle(53.9% at 23% 100%);
+    clip-path: circle(53.9% at 23% 100%);
+}
+.wave-banner2{
+    width: 100vw;
+    height: 100vh;
+    z-index: 3000;
+    background-color: 	pink;
+    -webkit-clip-path: circle(59.9% at 77% 100%);
+    clip-path: circle(59.9% at 77% 100%);*/
 
 /*--------------------------- Fim do Banner ---------------------------*/
 
 /*--------------------------- Começo dos Serviços ---------------------*/
+#services-section{
+	width: 100%;
+	background-image: url(assets/fish-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative; 
+	height: 800px;
+	display: flex;
+	justify-content: center;
+}
+
+#services-section > h2{
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%); 
+	top: 50px;
+	width: 117px;
+}
+
+#services-line{
+	position: absolute;
+	top: 95px;
+	width: 180px;
+	left: 50%;
+	right: 50%;
+	transform: translate(-50%, -50%);
+	border-top: 3px solid rgb(20, 49, 37);
+}
+
+.carousel-services{
+	width: 80%;
+	height: 50%;
+	position: absolute;
+	top: 200px;
+	height: 500px;
+	z-index: 1;
+}
+
+.services-card{
+	background-color: white;
+	width: 30px;
+	height: 420px;
+	margin-right: 25px;
+	margin-left: 25px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	padding-bottom: 100px;
+	border-radius: 10px;
+}
+
+.services-card > h4{
+	width: 70px;
+	margin-right: 50%;
+	margin-left: 50%;
+	display: flex;
+	font-size: 28px;
+	top: 0px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+}
+
+
+.services-card > div{
+	position: relative;
+	margin-right: 50%;
+	margin-left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100px;
+	display: flex;
+	flex-direction: column;
+	top: 180px;
+	width: 180px;
+}
+
+.serv-card-line{
+	margin-top: 75px;
+	border-top: 1px solid rgba(200, 200, 200, 0.8);
+}
+
+#services-band{
+	position: absolute;
+	height: 350px;
+	width: 100%;
+	background-color: rgba(20, 49, 37, 0.8);
+	bottom: 180px;
+	z-index: 0;
+}
+
+@media(max-width: 900px){
+	.carousel-services{
+		width: 50%;
+	}
+}
+
+@media(max-width: 700px){
+	.carousel-services{
+		width: 60%;
+	}
+}
+
+@media(max-width: 600px){
+	.carousel-services{
+		width: 70%;
+	}
+}
+
+@media(max-width: 450px){
+	.carousel-services{
+		width: 75%;
+	}
+
+	.services-card{
+		padding-bottom: 40px;
+	}
+
+	#services-band{
+		height: 320px;
+		bottom: 220px;
+	}
+}
+
+@media(max-width: 400px){
+	.carousel-services{
+		width: 83%;
+	}
+}
+
+@media(max-width: 350px){
+	.services-card{
+		padding-bottom: 10px;
+	}
+
+	.services-card > div{
+		top: 150px;
+	}
+
+	#services-band{
+		height: 300px;
+		bottom: 250px;
+	}
+}
 /*----------------------------fim dos serviços----------------------------*/
 
 /*--------------------------- Começo de sobre nós ---------------------*/
 #about-title{
 	width: 100%;
-	background-color:rgb(118, 131, 124); 
+	background-color: rgb(118, 131, 124);
 	display: flex;
 	justify-content: center;
 	height: 65px;
@@ -287,9 +443,9 @@ header{
 	.carousel-values{
 		width: 294px;
 		align-self: center;
-		
-		margin-bottom: 60px;
 		z-index: 1;
+		margin-bottom: 60px;
+		
 	}
 
 	.card-about{

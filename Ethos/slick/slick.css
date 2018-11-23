@@ -82,6 +82,11 @@
     height: 100%;
     min-height: 1px;
 }
+
+#services-section > .slick-slide{
+
+}
+
 [dir='rtl'] .slick-slide
 {
     float: right;
@@ -101,6 +106,10 @@
 .slick-initialized .slick-slide
 {
     display: none;
+}
+
+#services-section > .slick-initialized .slick-slide{
+    display: block;
 }
 
 @media(max-width: 900px){
