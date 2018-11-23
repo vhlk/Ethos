@@ -1,0 +1,381 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<title>Ethos</title>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="static/css/style.css">
+		<link rel="icon" href="static/assets/logo.png">
+		<!-- <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet"> -->
+		<link href="https://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="static/slick/slick.css"/>
+		<link rel="stylesheet" type="text/css" href="static/slick/slick-theme.css"/>
+		<link href="https://fonts.googleapis.com/css?family=Advent+Pro:100" rel="stylesheet">
+		{% block style %}
+        {% endblock style %}
+	</head>
+	<body>
+		
+		<header>
+			<img src="static/assets/logo.png" alt="logo ethos" id="header-logo">
+
+			<div id="header-links-1">
+				<a href="#banner" data-secname="banner" class="smoothscroll">Home</a>
+				<a href="" data-secname="" class="smoothscroll">Serviços</a>
+				<a href="#about-us-section" data-secname="about-us-section" class="smoothscroll">Sobre nós</a>
+				<a href="#network-section" data-secname="network-section" class="smoothscroll">Nossas redes</a>
+				<a href="#contact-section" data-secname="contact-section" class="smoothscroll">Contato</a>
+			</div>
+			<div id="header-links-2">
+				<a href="https://www.facebook.com/EthosConsultoriaJr/"><img src="static/assets/facebook-header.svg"></a>
+				<a href="https://www.instagram.com/ethosjr/"><img src="static/assets/instagram-header.svg"></a>
+			</div>
+
+			<img src="static/assets/hamburger.png" id="burger-header">
+			<div id="burger-menu">
+				<a href="#banner" data-secname="banner" class="smoothscroll">Home</a>
+				<a href="" data-secname="" class="smoothscroll">Serviços</a>
+				<a href="#about-us-section" data-secname="about-us-section" class="smoothscroll">Sobre nós</a>
+				<a href="#network-section" data-secname="network-section" class="smoothscroll">Nossas redes</a>
+				<a href="#contact-section" data-secname="contact-section" class="smoothscroll">Contato</a>
+				<hr>
+				<div id="header-network">
+					<img src="static/assets/facebook-header.svg">
+					<img src="static/assets/instagram-header.svg">
+				</div>
+			</div>
+		</header>
+		
+		<banner class="banner">
+			<div class="filtro-banner"><img class="banner-logo" src="static/assets/ethos_logo.png">
+			<div class="banner-text">
+				<h3> Integer porttitor accumsan facilisis. 
+						Nulla aliquam a tristique. </h3>
+			</div></div>
+		</banner>
+
+		<section id="services-section">
+			<h2>Serviços</h2>
+			<hr id="services-line">
+
+			<div class="carousel-services">
+				<div class="services-card">
+					<h4>Título</h4>
+					<hr class="serv-card-line">
+					<div>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+					</div>
+				</div>
+				<div class="services-card">
+					<h4>Título</h4>
+					<hr class="serv-card-line">
+					<div>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+					</div>
+				</div>
+				<div class="services-card">
+					<h4>Título</h4>
+					<hr class="serv-card-line">
+					<div>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+					</div>
+				</div>
+				<div class="services-card">
+					<h4>Título</h4>
+					<hr class="serv-card-line">
+					<div>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+					</div>
+				</div>
+				<div class="services-card">
+					<h4>Título</h4>
+					<hr class="serv-card-line">
+					<div>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+					</div>
+				</div>
+				<div class="services-card">
+					<h4>Título</h4>
+					<hr class="serv-card-line">
+					<div>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+						<p>blablabla blabla</p>
+					</div>
+				</div>
+			</div>
+			<div id="services-band"></div>
+		</section>
+		
+		<section id="about-us-section">
+			<div id="about-title">
+				<h2>Sobre nós</h2>
+			</div>
+			<div class="value-about" id="mission-about">
+				<div class="card-about" id="margin-mission">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Missão</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Visão</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+			</div>
+			<div class="value-about" id="first-about">
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+			</div>
+			<div class="value-about" id="last-about">
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+			</div>
+
+			<div class="carousel-values">
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>					
+				<div class="card-about">
+					<div class="above-card-about">
+						<img src="static/assets/check.svg">
+						<h4>Valores</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu ornare dolor, sed venenatis leo. Integer sed metus euismod, laoreet neque non, </p>
+				</div>
+			</div>
+
+			<div id="about-band">
+			</div>
+		</section>
+
+
+		<section id="network-section">
+			<h2>Nossas Redes</h2>
+			<hr id="network-line">
+			<div id="network-cards-keeper">
+				<div class="section-card">
+					<img src="static/assets/facebook-colourful-icon.png" alt="facebook logo">
+					<p>Siga ethos no facebook para acessar mais conteúdo. E fique por dentro de nossas notícias.</p>
+				</div>
+				<div class="section-card">
+					<img src="static/assets/instagram-colourful-icon.png" alt="instagram logo">
+					<p>Siga ethos no instagram para acessar mais conteúdo. E fique por dentro de nossas notícias.</p>
+				</div>
+			</div>
+			<form id="network-newsletter">
+				<p>Cadastre aqui seu email para receber nossas novidades</p>
+				<input type="email" name="email" placeholder="Seu melhor email" required>
+				<button id="network-newsletter-btn">Enviar
+				</button>
+			</form>
+		</section>
+
+		<section id="contact-section">
+			<h2>Contato</h2>
+			<hr id="contact-line">
+			<form>
+				<div id="get-data">
+					<div class="green-side">
+						<label>Nome:</label>
+						<input type="text" name="firstname" placeholder="Digite seu nome" required>
+					</div>
+					<div class="green-side">
+						<label>Sobrenome:</label>
+						<input type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+					</div>
+					<div class="green-side">
+						<label>Telefone:</label>
+						<input type="tel" name="usrtel" placeholder="(99) 99999-9999" required>
+					</div>
+					<div class="green-side">
+						<label>Email</label>
+						<input type="email" name="email" placeholder="Digite seu email" required>
+					</div>
+				</div>
+				<div id="send-data">
+					<div id = "contact-select">
+						<select name="service" required class="border-box-contact">
+							<option value="" disabled selected>Serviço</option>
+							<option value="service1">Serviço 1</option>
+							<option value="service2">Serviço 2</option>
+							<option value="service3">Serviço 3</option>
+						</select>
+						<select name="meet" required class="border-box-contact">
+							<option value="" disabled selected>Como conheceu?</option>
+							<option value="service1">Facebook</option>
+							<option value="service2">Instagram</option>
+							<option value="service3">Indicação</option>
+						</select>
+					</div>
+					<input type="text" name="subject" class="border-box-contact" id="contact-subject" placeholder="Assunto" required>
+					<textarea name="message" id="message-contact" required></textarea>
+					<button>Enviar</button>
+				</div>
+			</form>
+		</section>
+
+		<footer>
+			<hr id="footer-line">
+			<div>
+				<div id="footer-1">
+					<div id="footer-ball">
+						<img id="footer-logo" src="static/assets/logo.png">
+					</div>
+				</div>
+				<div id="footer-2">
+					<div class="box-footer">
+						<a class="footer-link" href="https://www.facebook.com/EthosConsultoriaJr/">
+							<img src="static/assets/facebook-footer.svg">
+						</a>
+						<a class="footer-link" href="https://www.facebook.com/EthosConsultoriaJr/">
+							<p>/EthosConsultoriaJr</p>
+						</a>
+					</div>
+					<div class="box-footer">
+						<a class="footer-link" href="https://www.instagram.com/ethosjr/">
+							<img src="static/assets/instagram-footer.svg">
+						</a>
+						<a class="footer-link" href="https://www.instagram.com/ethosjr/">
+							<p class="footer-link">@ethosjr</p>
+						</a>
+					</div>
+					<div class="box-footer">
+						<a class="footer-link" class="footer-box" href="https://www.linkedin.com/company/ethos-consultoria-jr-/">
+							<img src="static/assets/linkedin.svg">
+						</a>
+						<a class="footer-link" href="https://www.linkedin.com/company/ethos-consultoria-jr-/">
+							<p class="footer-link">/ethos-consultoria-jr-</p>
+						</a>
+					</div>
+				</div>
+				<div id="footer-3">
+					<div class="box-footer">
+						<img id="right-height" src="static/assets/email.svg">
+						<p>contato@ethosjr.com</p>
+					</div>
+					<div class="box-footer">
+						<img src="static/assets/whatsapp-logo.svg">
+						<p>(81) 99617-4474</p>
+					</div>
+					<div class="box-footer">
+						<img src="static/assets/location.svg">
+						<p>Rua Acadêmico, Recife</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="static/slick/slick.min.js"></script>
+	
+		<script src="static/js/main.js"></script>
+	</body>
+</html>
