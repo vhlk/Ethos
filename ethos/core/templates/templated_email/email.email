@@ -1,0 +1,9 @@
+{% block subject %}[Novo contato para Newsletter]{% endblock %}
+
+{% block html %}
+
+Novo email cadastrado na secção 'Nossas Redes':
+
+<p><b>E-mail:</b> {{ email }} </p>
+
+{% endblock %}
