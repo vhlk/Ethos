@@ -5,6 +5,7 @@ html, body{
 	color: rgb(62, 61, 63);
 }
 
+
 h2{
 	font-size: 32px;
 	position: absolute;
@@ -17,6 +18,7 @@ input, select{
 	font-family: 'Fira Sans', sans-serif;
 }
 
+
 /*-----------------começo do header-----------------*/
 header{
 	width: 100%;
@@ -28,6 +30,7 @@ header{
 	z-index: 100000;
 	overflow: hidden; /*Tira o lag da nav no scroll*/
 	border-bottom: 1px solid rgb(194, 194, 194);
+	display: none;
 }
 
 #header-logo{
@@ -106,11 +109,9 @@ header{
 	#header-logo{
 		width: 60px;
 		left: 10%;
-		
 	}
-	
+
 	header{
-		
 		height: 70px;
 		overflow: hidden;
 	}
@@ -139,61 +140,124 @@ header{
 
 /*----------------- Começo do Banner ---------------------*/
 
-.banner{
+#banner{
+	position: relative;
+	top: 0;
 	width: 100%;
-	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 650px;
 }
 
-.banner-logo{
-    width: 55%;
-    height: 65%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 175px auto 10px auto;
+#banner-logo{
+	width: 700px;
+	margin-top: 80px;
+	position: fixed;
 }
 
-.banner .banner-text{
-    font-family: 'Fira Sans', sans-serif;
-    font-weight: 100;
-    color: rgb(109, 108, 110);
-    font-size: 16px;
+
+h3{
+	font-weight: lighter;
+	font-size: 30px;
+	margin: 0;
 	text-align: center;
-	margin: 0 auto 100px auto;
-	display: block;
 }
 
+h3 > p{
+	margin: 0;
+}
 
-@media(max-width:900px){ /*banner mobile*/
+#logo-simples{
+	width: 700px;
+	margin-top: 80px;
+	position: fixed;
+}
 
-	.banner .filtro-banner{
-		width: 100%;
-		height: 100%;
-		margin-top: -40%;
-		background-color: rgb(212, 241, 210);
+#banner-text{
+	position: absolute;
+	top: 470px;
+}
+
+@media(max-width: 900px){
+	#banner-logo{
+		width: 500px;
 	}
 
-	.banner-logo{
-	    width: 60%;
-		height: 30%;
-		padding-top: 40%;
+	#banner{
+		height: 520px;
 	}
 
-	.banner .banner-text{
-		font-size: 14px;
-		padding-bottom: 55%;
+	h3{
+		font-size: 25px;
+	}
+
+	#logo-simples{
+		width: 500px;
 	}
 }
 
+@media(max-width: 600px){ 
+	#banner-logo{
+		width: 400px;
+	}
+
+	#banner{
+		height: 450px;
+	}
+
+	h3{
+		font-size: 23px;
+	}
+	#logo-simples{
+		width: 400px;
+	}
+}
+
+@media(max-width: 450px){
+	#banner-logo{
+		width: 350px;
+	}
+
+	#banner{
+		height: 420px;
+	}
+
+	h3{
+		font-size: 20px;
+	}
+	#logo-simples{
+		width: 350px;
+	}
+}
+
+@media(max-width: 400px){
+	#banner-logo{
+		width: 310px;
+	}
+
+	#banner{
+		height: 380px;
+	}
+
+	h3{
+		font-size: 17px;
+	}
+	#logo-simples{
+		width: 310px;
+	}
+}
 
 
 /*--------------------------- Fim do Banner ---------------------------*/
+.carousel-values{
+	display: none;
+}
 
 /*--------------------------- Começo dos Serviços ---------------------*/
 #services-section{
 	width: 100%;
-	background-image: url(../assets/fish-bg.jpg);
+	background-image: url(assets/fish-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative; 
@@ -280,6 +344,16 @@ header{
 	z-index: 0;
 }
 
+.carousel-services > .slick-next::before{
+	color: white;
+	opacity: 0.9;
+}
+
+.carousel-services > .slick-prev::before{
+	color: white;
+	opacity: 0.9;
+}
+
 @media(max-width: 900px){
 	.carousel-services{
 		width: 50%;
@@ -335,8 +409,10 @@ header{
 }
 /*----------------------------fim dos serviços----------------------------*/
 
-
 /*--------------------------- Começo de sobre nós ---------------------*/
+.carousel-values{
+	display: none;
+}
 #about-title{
 	width: 100%;
 	background-color: rgb(118, 131, 124);
@@ -355,7 +431,7 @@ header{
 }
 
 #about-us-section{
-	background-image: url(../assets/lines-bg.jpg);
+	background-image: url(assets/lines-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -469,7 +545,7 @@ header{
 
 /*----------------------Começo de nossas redes---------------------------*/
 #network-section{
-	background-image: url(../assets/fish-bg.jpg);
+	background-image: url(assets/fish-bg.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: relative;
@@ -992,7 +1068,5 @@ footer > div > div > div> img, .footer-link > img{
 	.box-footer{
 		padding-bottom: 20px;
 	}
-
-
 }
 /*--------------fim de footer--------------*/
